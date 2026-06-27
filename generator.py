@@ -62,7 +62,7 @@ for year in range(START_YEAR, START_YEAR + YEARS_AHEAD):
 
         # ========== A50 ==========
         if m in [2, 3, 5, 6, 8, 9, 11, 12]:
-            a50 = last_business_days(year, m, 2)[1]
+            a50 = last_business_days(year, m, 2)
 
             add_event(events, a50,
                       "富时A50交割日（极高波动）",
